@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Minh Thu Portfolio - Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <nav class="main-nav">
+        <div class="logo">
+            <a href="index.html">minhthu.dev</a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Open navigation">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html" class="active">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="section">
+        <h1>Portfolio</h1>
+        <p>
+            Here are some academic and personal projects that reflect my interests
+            in web development and cybersecurity.
+        </p>
+    </section>
+
+    <!-- Gallery grid -->
+    <section class="section gallery">
+        <div class="gallery-grid">
+            <article class="gallery-item">
+                <img src="images/game project.png" alt="Maze Game Project">
+      <h3>Maze Game Project</h3>
+      <p>
+        A Python-based maze game where players navigate randomly generated mazes
+        with different difficulty levels using keyboard controls.
+      </p>
+    </article>
+
+    <article class="gallery-item">
+      <img src="images/voice phishing.png" alt="Voice Phishing Detection">
+      <h3>Voice Phishing Detection Model</h3>
+      <p>
+        A voice phishing detection model using speech recognition and machine
+        learning techniques to identify scam calls.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Image modal -->
+    <section>
+        <div class="modal" id="imageModal" aria-hidden="true">
+            <div class="modal-content">
+                <span class="modal-close" id="modalClose">&times;</span>
+                <img id="modalImg" src="" alt="">
+                <p id="modalCaption"></p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>© 2025 Minh Thu. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

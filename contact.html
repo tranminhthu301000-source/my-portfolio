@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Minh Thu Portfolio - Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <nav class="main-nav">
+        <div class="logo">
+            <a href="index.html">minhthu.dev</a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Open navigation">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="section">
+        <h1>Contact</h1>
+        <p>
+            Thank you for visiting my personal portfolio website. Feel free to send me a message through the form below.
+        </p>
+    </section>
+
+    <section class="section">
+        <form id="contactForm" novalidate>
+            <article>
+                <label for="name">Name *</label>
+                <input type="text" id="name" name="name" required minlength="2"
+                       placeholder="Enter your name">
+            </article>
+
+            <article>
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required
+                       placeholder="example@email.com">
+            </article>
+
+            <article>
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" required minlength="10"
+                          placeholder="Write your message here"></textarea>
+            </article>
+
+            <button type="submit" class="btn-primary">Send Message</button>
+            <p class="form-message" id="formMessage"></p>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>© 2025 Minh Thu. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
